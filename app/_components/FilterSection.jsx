@@ -14,11 +14,11 @@ function FilterSection({setBathCount,setBedCount,setParkingCount,setHomeType}) {
     md:flex gap-2'>
 
         <Select onValueChange={setBedCount}>
-            {/* place holder for bed */}
+ 
             <SelectTrigger className="w-[180px]">
                 <SelectValue placeholder="Bed" />
             </SelectTrigger>
-            {/* dropdown */}
+             
             <SelectContent>
                 <SelectItem value="2">
                     <h2 className='flex gap-2'>
@@ -40,11 +40,11 @@ function FilterSection({setBathCount,setBedCount,setParkingCount,setHomeType}) {
         </Select>
 
         <Select  onValueChange={setBathCount}>
-            {/* placeholder for bath */}
+             
             <SelectTrigger className="w-[180px]">
                 <SelectValue placeholder="Bath" />
             </SelectTrigger>
-            {/* dropdowns */}
+             
             <SelectContent>
                 <SelectItem value="2">
                     <h2 className='flex gap-2'>
@@ -66,11 +66,11 @@ function FilterSection({setBathCount,setBedCount,setParkingCount,setHomeType}) {
         </Select>
 
         <Select  onValueChange={setParkingCount}>
-            {/* Placeholder for parking */}
+             
             <SelectTrigger className="w-[180px]">
                 <SelectValue placeholder="Parking" />
             </SelectTrigger>
-            {/* dropdowns */}
+            
             <SelectContent>
                 <SelectItem value="1+">
                         <h2 className='flex gap-2'>
@@ -89,11 +89,11 @@ function FilterSection({setBathCount,setBedCount,setParkingCount,setHomeType}) {
 
         <Select  onValueChange={(value)=>value=='All'?
         setHomeType(null): setHomeType(value)}>
-            {/* placeholder */}
+             
             <SelectTrigger className="w-[180px]">
                 <SelectValue placeholder="Home Type" />
             </SelectTrigger>
-            {/* dropdown */}
+             
             <SelectContent>
                 <SelectItem value="All">
                     All

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Formik, Form, Field } from "formik";
-import { supabase } from "../../../utils/supabase/client"; // Adjust the path
+import { supabase } from "../../../utils/supabase/client"; 
 import { toast } from "sonner";
 
 const ContactPage = () => {
@@ -30,15 +30,6 @@ const ContactPage = () => {
     const { data, error } = await supabase
       .from("enquiry")
       .insert([values]);
-
-    //   console.log("Supabase Response:", { data, error });
-
-    // if (data) {
-    //   toast.success("Enquiry Sent Successfully!");
-    //   resetForm();
-    // } else {
-    //   toast.error("Error submitting the form. Please try again.");
-    // }
     
       toast.success("Enquiry Sent Successfully!");
       resetForm();
@@ -51,7 +42,7 @@ const ContactPage = () => {
       <section className="mb-16">
         <h1 className="text-4xl font-bold text-center text-blue-600 mb-8">Contact Us</h1>
         <div className="flex flex-col md:flex-row justify-center gap-10">
-          {/* About Section */}
+           
           <div className="bg-white shadow-md rounded-lg p-8 w-full md:w-1/2">
             <h2 className="text-2xl font-semibold text-gray-800">About Me</h2>
             <ul className="mt-4 text-gray-600 space-y-2">
@@ -62,7 +53,7 @@ const ContactPage = () => {
             </ul>
           </div>
 
-          {/* Form Section */}
+           
           <div className="bg-white shadow-md rounded-lg p-8 w-full md:w-1/2">
             <h2 className="text-2xl font-semibold text-gray-800">Send us your Enquiry</h2>
             <Formik

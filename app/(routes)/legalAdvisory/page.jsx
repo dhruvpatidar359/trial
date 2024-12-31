@@ -65,7 +65,7 @@ const Page = () => {
 
   return (
     <div className="p-8 space-y-12">
-      {/* Services Section */}
+       
       <h1 className="text-2xl md:text-3xl font-bold text-center text-primary mt-16">
         Our Services
       </h1>
@@ -90,7 +90,7 @@ const Page = () => {
         ))}
       </div>
 
-      {/* Charges Section */}
+       
       <h1 className="text-2xl md:text-3xl font-bold text-center text-primary mt-16">
         Our Pricing that makes sense !
       </h1>

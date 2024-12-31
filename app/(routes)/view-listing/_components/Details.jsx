@@ -9,7 +9,7 @@ function Details({listingDetail}) {
 
 
     const handleShareClick = () => {
-        const url = `${window.location.origin}/view-listing/21`; // This will dynamically use the base URL
+        const url = `${window.location.origin}/view-listing/21`; 
         navigator.clipboard.writeText(url)
           .then(() => {
             toast("Link copied to clipboard!");

@@ -9,7 +9,7 @@ import {
 import Image from 'next/image';
   
 function Slider({imageList}) {
-    // console.log(imageList);
+     
 
   return (
     <div >
